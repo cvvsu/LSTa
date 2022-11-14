@@ -85,7 +85,7 @@ run the `datasets/LST2Ta_loader.py` to test whether you obtain the correct model
 
 ## Models
 
-In this study, we use the `UNet` model, but other models are also available.
+We use the `UNet` model, but other models are also available.
 
 For the UNet model, you can choose single conv layer, double conv layer, or single conv with SE module. We find that different types of convs do not affect the retrieval results.
 
@@ -99,7 +99,7 @@ Options for `LST2Ta (running on one GPU)`:
 
 To speed up training, you can choose distributed training: DP or DDP. Note that PyTorch has a new version of DDP, and we do not run on DDP. So, if you want to use DDP, it is on your own risk.
 
-We use DP on a machine with 4 NVIDIA V100 GPU, and thus the learning rate is accordingly 0.00004.
+We use DP on a machine with 4 NVIDIA V100 GPUs, and thus the learning rate is accordingly 0.00004.
 
 `pad_size` is applied to avoid overfitting. 
 
