@@ -4,6 +4,12 @@
 
 Since we do not have the permission to publish the Ta datasets measured in mainland China, we use the publicly available Ta datasets measured in Finland to illustrate how to use the code.
 
+The detailed information for mainland China and Finland is available in Table I and Table II.
+
+![img](assets/table1.png)
+
+![img](assets/table2.png)
+
 ### Ta datasets
 
 Please download the Ta datasets from the [GSOD](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00516) website. We provide a function (`utils/dl_gsod.py`) for you to download the datasets.
