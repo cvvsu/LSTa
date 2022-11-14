@@ -103,7 +103,7 @@ We use DP on a machine with 4 NVIDIA V100 GPU, and thus the learning rate is acc
 
 `pad_size` is applied to avoid overfitting. 
 
-Simply add an option --isTest to obtain the retrieval results.
+Simply add an option --isTest to obtain the retrieval results on the test set.
 
 
 ## Citation
