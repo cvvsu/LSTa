@@ -112,11 +112,10 @@ We use DP on a machine with 4 NVIDIA V100 GPUs, and thus the learning rate is ac
 Simply add an option --isTest to obtain the retrieval results on the test set.
 
 
-## Citation
+## License and Citation
 
-Please kindly cite our papers if you use our code.
 
-All rights reserved.
+Though MIT License is applied, you must cite our paper if you use our code (will be fully MIT once the manuscript has been published). 
 
 ```
 @article{su2022lst2ta,
@@ -129,6 +128,7 @@ All rights reserved.
   publisher={}
 }
 ```
+
 
 ## Acknowledgment
 
