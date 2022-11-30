@@ -28,7 +28,7 @@ The  `datasets/station_loc.csv` file contain the station locations (longitudes, 
 df = pd.read_csv('datasets/met/Ta_FI.csv')
 df_unique =  df[['state', 'longitude', 'latitude', 'row', 'col']].drop_duplicates()
 df_FI = df_unique[df_unique['state'].str.contains(', FI')]
-df_FI.to_csv('datasets/station_loc.csv')
+df_FI.to_csv('datasets/station_loc.csv', index=False)
 ```
 
 ### MODIS Aqua LST datasets
@@ -55,7 +55,7 @@ To speed up, you can execute several `.py` files simultaneously and split the da
     names = ['FI_Day', 'FI_QCD', 'FI_Night', 'FI_QCN']
     for band, name in zip(bands, names):
         dataset = ee.ImageCollection('MODIS/061/MYD11A1')\
-                            .filter(ee.Filter.date('2010-01-01', '2021-12-31'))\
+                            .filter(ee.Filter.date('2010-01-01', '2022-01-01'))\
                             .select(band)\
                             .filterBounds(ROI)
         geemap.ee_export_image_collection_to_drive(dataset, folder=f'{name}', scale=1000, region=ROI, crs='EPSG:4326')
@@ -115,6 +115,20 @@ Simply add an option --isTest to obtain the retrieval results on the test set.
 ## Citation
 
 Please kindly cite our papers if you use our code.
+
+All rights reserved.
+
+```
+@article{su2022lst2ta,
+  title={Image-to-image training for spatially seamless air temperature retrieval with satellite images and station data},
+  author={Su, Peifeng, and Abera, Temesgen, and Guan, Yanlong, and Pellikka, Petri},
+  journal={Under review},
+  volume={},
+  pages={},
+  year={2022},
+  publisher={}
+}
+```
 
 ## Acknowledgment
 
