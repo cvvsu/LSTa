@@ -103,7 +103,7 @@ Options for `LST2Ta (running on one GPU)`:
 
 `$ python main.py --name LST2Ta --model_name LST2Ta --dist none --epochs 200 --early_stop 120 --batch_size 8 --input_folders datasets/npy/LSTD datasets/npy/LSTN --output_folders datasets/Ta --input_nc 2 --output_nc 3 --val_ratio 0.1 --test_ratio 0.1 --pad_size 400 --lr 0.00016 --beta1 0.5`
 
-To speed up training, you can choose distributed training: DP or DDP. Note that PyTorch has a new version of DDP, and we do not run on DDP. So, if you want to use DDP, it is on your own risk.
+To speed up training, you can choose distributed training: DP or DDP. Note that PyTorch has a new version of DDP, and we do not run on DDP. So, if you want to use DDP, it is at your own risk.
 
 We use DP on a machine with 4 NVIDIA V100 GPUs, and thus the learning rate is accordingly 0.00004.
 
@@ -114,18 +114,20 @@ Simply add an option --isTest to obtain the retrieval results on the test set.
 
 ## License and Citation
 
+The code is released under the MIT license.
 
-Though MIT License is applied, you must cite our paper if you use our code (will be fully MIT once the manuscript has been published). 
+Please kindly cite our paper if you use our code. 
 
 ```
-@article{su2022lst2ta,
+@article{su2023lst2ta,
   title={Image-to-image training for spatially seamless air temperature retrieval with satellite images and station data},
   author={Su, Peifeng, and Abera, Temesgen, and Guan, Yanlong, and Pellikka, Petri},
-  journal={Under review},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
   volume={},
   pages={},
-  year={2022},
-  publisher={}
+  year={2023},
+  publisher={IEEE},
+  doi={10.1109/JSTARS.2023.3256363}
 }
 ```
 
