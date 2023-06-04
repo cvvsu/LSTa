@@ -120,15 +120,14 @@ Please kindly cite our paper if you use our code.
 
 ```
 @article{su2023lst2ta,
-  title={Image-to-image training for spatially seamless air temperature retrieval with satellite images and station data},
-  author={Su, Peifeng, and Abera, Temesgen, and Guan, Yanlong, and Pellikka, Petri},
-  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
-  volume={},
-  pages={},
+  author={Su, Peifeng and Abera, Temesgen and Guan, Yanlong and Pellikka, Petri},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
+  title={Image-to-Image Training for Spatially Seamless Air Temperature Estimation With Satellite Images and Station Data}, 
   year={2023},
-  publisher={IEEE},
-  doi={10.1109/JSTARS.2023.3256363}
-}
+  volume={16},
+  number={},
+  pages={3353-3363},
+  doi={10.1109/JSTARS.2023.3256363}}
 ```
 
 
